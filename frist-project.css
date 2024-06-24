@@ -651,7 +651,7 @@ footer {
     top: 0px;
     align-items: center;
     flex-direction: row;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden !important;
   }
   .hamburger i {
@@ -675,16 +675,18 @@ footer {
 
   .logo-reponsive {
     display: flex;
-    /* float: left; */
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .logo-reponsive h1 {
     line-height: 70px;
     color: #232d39;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 780;
     text-transform: uppercase;
     padding-left: 11px;
+    
   }
 
   .mobile-menu {
@@ -708,27 +710,24 @@ footer {
     align-items: center;
     gap: 1rem;
   }
-  .navigation .nav-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 4.5rem;
-    padding-bottom: 6.5rem;
-    padding-top: 4.5rem;
+  .navigation .nav-link{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 1rem;
+    padding: 1rem 0px;
     width: 100%;
-    min-height: 100%;
-    background-color: white;
-    text-align: center;
-    /* padding: 1rem; */
+    min-height:100%;
+    background-color:white;
+    text-align:center;
   }
 
   .navigation .nav-link li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     width: 100%;
     list-style: none;
-    /* padding: 8.5px; */
+    padding: 8.5px;
   }
   .navigation .nav-link li a {
     text-decoration: none;
@@ -746,6 +745,7 @@ footer {
   .navigation .nav-link li:nth-child(6) {
     border: none;
     background: #ed5638;
+    padding: 1rem 0px;
   }
   .mobile-menu .logo {
     display: flex;
@@ -884,11 +884,11 @@ footer {
   .right-col .btn {
     padding-left: 1rem;
   }
-  .section-table {
+  .section-table{
     padding: 1.5rem;
   }
 
-  .expert-training {
+  .expert-training{
     height: 40vh;
     padding: 0.6rem;
     display: flex;
@@ -898,7 +898,7 @@ footer {
     text-align: center;
   }
 
-  .expert-training h2 {
+  .expert-training h2{
     font-size: 28px;
     font-weight: 800;
     color: #232d39;
@@ -908,7 +908,7 @@ footer {
     margin-bottom: 0px;
   }
 
-  .expert-training p {
+  .expert-training p{
     padding: 0px;
     font-size: 14px;
     line-height: 25px;
@@ -916,7 +916,7 @@ footer {
     text-wrap: wrap;
   }
 
-  .cards {
+  .cards{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     margin-left: 2rem;
@@ -948,7 +948,9 @@ footer {
     width: 100%;
     margin-bottom: 3rem;
   }  
-   
+  .address-name .context form input{
+    min-width: 100%;
+  }
   .sec-footer{
     height: 60px;
     display: flex;
